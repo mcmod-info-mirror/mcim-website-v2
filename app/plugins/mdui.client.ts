@@ -1,0 +1,18 @@
+import 'mdui/components/navigation-rail.js'
+import 'mdui/components/navigation-rail-item.js'
+import 'mdui/components/navigation-bar.js'
+import 'mdui/components/navigation-bar-item.js'
+import 'mdui/components/top-app-bar.js'
+import 'mdui/components/top-app-bar-title.js'
+import 'mdui/components/button.js'
+import 'mdui/components/button-icon.js'
+import 'mdui/components/card.js'
+import 'mdui/components/dialog.js'
+import 'mdui/components/segmented-button-group.js'
+import 'mdui/components/segmented-button.js'
+import 'mdui/components/linear-progress.js'
+import 'mdui/components/divider.js'
+import 'mdui/components/list.js'
+import 'mdui/components/list-item.js'
+
+export default defineNuxtPlugin(() => {})

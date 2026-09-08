@@ -1,0 +1,21 @@
+services:
+  site:
+    build: ..
+    ports:
+      - "3000:3000"
+    environment:
+      NUXT_MCIM_API_BASE: https://mod.mcimirror.top
+      NUXT_SYNC_API_BASE: http://mock:9901
+      NUXT_PUBLIC_SITE_URL: ${SITE_URL:-http://localhost:3000}
+    depends_on:
+      - mock
+  mock:
+    image: node:22-bookworm-slim
+    working_dir: /app
+    volumes:
+      - ..:/app:ro
+    command: node dev/mock/server.mjs
+    environment:
+      MOCK_SCENARIO: ${MOCK_SCENARIO:-normal}
+    ports:
+      - "9901:9901"

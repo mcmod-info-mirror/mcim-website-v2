@@ -1,0 +1,3457 @@
+{
+  "data": [
+    {
+      "_id": {
+        "$oid": "68be0c1a2f3e4d5a6b7c8d00"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788868500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788868530000"
+        }
+      },
+      "duration_ms": 30000,
+      "total": 50,
+      "synced": 47,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 50,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c262f3e4d5a6b7c8d12"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788868500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788868625028"
+        }
+      },
+      "duration_ms": 125028,
+      "total": 422,
+      "synced": 419,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 844,
+      "files": 1266,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c322f3e4d5a6b7c8d24"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788868500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788868720056"
+        }
+      },
+      "duration_ms": 220056,
+      "total": 794,
+      "synced": 791,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 794,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c3e2f3e4d5a6b7c8d36"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788868500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788868815084"
+        }
+      },
+      "duration_ms": 315084,
+      "total": 266,
+      "synced": 263,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 532,
+      "files": 798,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c4a2f3e4d5a6b7c8d48"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "running",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788868500000"
+        }
+      },
+      "finished_at": null,
+      "duration_ms": null,
+      "total": 638,
+      "synced": 635,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 638,
+      "discovered": 6,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c562f3e4d5a6b7c8d60"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788868500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788868605140"
+        }
+      },
+      "duration_ms": 105140,
+      "total": 110,
+      "synced": 107,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 220,
+      "files": 330,
+      "discovered": 4,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c622f3e4d5a6b7c8d72"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "error",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788868500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788868700168"
+        }
+      },
+      "duration_ms": 200168,
+      "total": 482,
+      "synced": 0,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 482,
+      "discovered": 0,
+      "removed": 0,
+      "error": "upstream returned 503 Service Unavailable after 3 retries",
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c6e2f3e4d5a6b7c8d84"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788868500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788868795196"
+        }
+      },
+      "duration_ms": 295196,
+      "total": 854,
+      "synced": 851,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1708,
+      "files": 2562,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c7a2f3e4d5a6b7c8d96"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788868500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788868890224"
+        }
+      },
+      "duration_ms": 390224,
+      "total": 326,
+      "synced": 323,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 652,
+      "files": 978,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c1b2f3e4d5a6b7c8d01"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788867300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788867337919"
+        }
+      },
+      "duration_ms": 37919,
+      "total": 81,
+      "synced": 78,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 81,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c272f3e4d5a6b7c8d13"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788867300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788867432947"
+        }
+      },
+      "duration_ms": 132947,
+      "total": 453,
+      "synced": 446,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 4,
+      "requeued": 4,
+      "versions": 906,
+      "files": 1359,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c1c2f3e4d5a6b7c8d02"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788866100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788866145838"
+        }
+      },
+      "duration_ms": 45838,
+      "total": 112,
+      "synced": 109,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 112,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c282f3e4d5a6b7c8d14"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788866100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788866240866"
+        }
+      },
+      "duration_ms": 140866,
+      "total": 484,
+      "synced": 481,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 968,
+      "files": 1452,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c1d2f3e4d5a6b7c8d03"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788864900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788864953757"
+        }
+      },
+      "duration_ms": 53757,
+      "total": 143,
+      "synced": 140,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 143,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c292f3e4d5a6b7c8d15"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788864900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788865048785"
+        }
+      },
+      "duration_ms": 148785,
+      "total": 515,
+      "synced": 512,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1030,
+      "files": 1545,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c1e2f3e4d5a6b7c8d04"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788863700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788863761676"
+        }
+      },
+      "duration_ms": 61676,
+      "total": 174,
+      "synced": 166,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 5,
+      "requeued": 5,
+      "versions": 0,
+      "files": 174,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c2a2f3e4d5a6b7c8d16"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788863700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788863856704"
+        }
+      },
+      "duration_ms": 156704,
+      "total": 546,
+      "synced": 543,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1092,
+      "files": 1638,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c1f2f3e4d5a6b7c8d05"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788862500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788862569595"
+        }
+      },
+      "duration_ms": 69595,
+      "total": 205,
+      "synced": 202,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 205,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c2b2f3e4d5a6b7c8d17"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788862500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788862664623"
+        }
+      },
+      "duration_ms": 164623,
+      "total": 577,
+      "synced": 574,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1154,
+      "files": 1731,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c202f3e4d5a6b7c8d06"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788861300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788861377514"
+        }
+      },
+      "duration_ms": 77514,
+      "total": 236,
+      "synced": 233,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 236,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c2c2f3e4d5a6b7c8d18"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788861300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788861472542"
+        }
+      },
+      "duration_ms": 172542,
+      "total": 608,
+      "synced": 605,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1216,
+      "files": 1824,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c332f3e4d5a6b7c8d25"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788861300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788861527975"
+        }
+      },
+      "duration_ms": 227975,
+      "total": 825,
+      "synced": 822,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 825,
+      "discovered": 0,
+      "removed": 1,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c3f2f3e4d5a6b7c8d37"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788861300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788861623003"
+        }
+      },
+      "duration_ms": 323003,
+      "total": 297,
+      "synced": 294,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 594,
+      "files": 891,
+      "discovered": 0,
+      "removed": 1,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c4b2f3e4d5a6b7c8d49"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788861300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788861718031"
+        }
+      },
+      "duration_ms": 418031,
+      "total": 669,
+      "synced": 661,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 5,
+      "requeued": 5,
+      "versions": 0,
+      "files": 669,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c572f3e4d5a6b7c8d61"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788861300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788861413059"
+        }
+      },
+      "duration_ms": 113059,
+      "total": 141,
+      "synced": 138,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 282,
+      "files": 423,
+      "discovered": 5,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c212f3e4d5a6b7c8d07"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "error",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788860100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788860185433"
+        }
+      },
+      "duration_ms": 85433,
+      "total": 267,
+      "synced": 0,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 267,
+      "discovered": 0,
+      "removed": 0,
+      "error": "upstream returned 503 Service Unavailable after 3 retries",
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c2d2f3e4d5a6b7c8d19"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788860100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788860280461"
+        }
+      },
+      "duration_ms": 180461,
+      "total": 639,
+      "synced": 636,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1278,
+      "files": 1917,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c222f3e4d5a6b7c8d08"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788858900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788858993352"
+        }
+      },
+      "duration_ms": 93352,
+      "total": 298,
+      "synced": 295,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 298,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c2e2f3e4d5a6b7c8d20"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "error",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788858900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788859088380"
+        }
+      },
+      "duration_ms": 188380,
+      "total": 670,
+      "synced": 0,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1340,
+      "files": 2010,
+      "discovered": 0,
+      "removed": 0,
+      "error": "upstream returned 503 Service Unavailable after 3 retries",
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c232f3e4d5a6b7c8d09"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788857700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788857801271"
+        }
+      },
+      "duration_ms": 101271,
+      "total": 329,
+      "synced": 326,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 329,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c2f2f3e4d5a6b7c8d21"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788857700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788857896299"
+        }
+      },
+      "duration_ms": 196299,
+      "total": 701,
+      "synced": 698,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1402,
+      "files": 2103,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c242f3e4d5a6b7c8d10"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788856500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788856609190"
+        }
+      },
+      "duration_ms": 109190,
+      "total": 360,
+      "synced": 357,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 360,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c302f3e4d5a6b7c8d22"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788856500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788856704218"
+        }
+      },
+      "duration_ms": 204218,
+      "total": 732,
+      "synced": 726,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 3,
+      "requeued": 3,
+      "versions": 1464,
+      "files": 2196,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c252f3e4d5a6b7c8d11"
+      },
+      "task": "curseforge-queue",
+      "provider": "curseforge",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788855300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788855417109"
+        }
+      },
+      "duration_ms": 117109,
+      "total": 391,
+      "synced": 388,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 391,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c312f3e4d5a6b7c8d23"
+      },
+      "task": "modrinth-queue",
+      "provider": "modrinth",
+      "operation": "queue",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788855300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788855512137"
+        }
+      },
+      "duration_ms": 212137,
+      "total": 763,
+      "synced": 760,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1526,
+      "files": 2289,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c342f3e4d5a6b7c8d26"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788854100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788854335894"
+        }
+      },
+      "duration_ms": 235894,
+      "total": 856,
+      "synced": 853,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 856,
+      "discovered": 0,
+      "removed": 2,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c402f3e4d5a6b7c8d38"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788854100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788854430922"
+        }
+      },
+      "duration_ms": 330922,
+      "total": 328,
+      "synced": 325,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 656,
+      "files": 984,
+      "discovered": 0,
+      "removed": 2,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c4c2f3e4d5a6b7c8d50"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788854100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788854525950"
+        }
+      },
+      "duration_ms": 425950,
+      "total": 700,
+      "synced": 697,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 700,
+      "discovered": 1,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c582f3e4d5a6b7c8d62"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788854100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788854220978"
+        }
+      },
+      "duration_ms": 120978,
+      "total": 172,
+      "synced": 169,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 344,
+      "files": 516,
+      "discovered": 6,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c352f3e4d5a6b7c8d27"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788846900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788847143813"
+        }
+      },
+      "duration_ms": 243813,
+      "total": 887,
+      "synced": 884,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 887,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c412f3e4d5a6b7c8d39"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788846900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788847238841"
+        }
+      },
+      "duration_ms": 338841,
+      "total": 359,
+      "synced": 356,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 718,
+      "files": 1077,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c4d2f3e4d5a6b7c8d51"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788846900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788846933869"
+        }
+      },
+      "duration_ms": 33869,
+      "total": 731,
+      "synced": 728,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 731,
+      "discovered": 2,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c592f3e4d5a6b7c8d63"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788846900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788847028897"
+        }
+      },
+      "duration_ms": 128897,
+      "total": 203,
+      "synced": 200,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 406,
+      "files": 609,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c362f3e4d5a6b7c8d28"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788839700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788839951732"
+        }
+      },
+      "duration_ms": 251732,
+      "total": 918,
+      "synced": 915,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 918,
+      "discovered": 0,
+      "removed": 1,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c422f3e4d5a6b7c8d40"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788839700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788840046760"
+        }
+      },
+      "duration_ms": 346760,
+      "total": 390,
+      "synced": 386,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 1,
+      "requeued": 1,
+      "versions": 780,
+      "files": 1170,
+      "discovered": 0,
+      "removed": 1,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c4e2f3e4d5a6b7c8d52"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788839700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788839741788"
+        }
+      },
+      "duration_ms": 41788,
+      "total": 762,
+      "synced": 759,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 762,
+      "discovered": 3,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c5a2f3e4d5a6b7c8d64"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788839700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788839836816"
+        }
+      },
+      "duration_ms": 136816,
+      "total": 234,
+      "synced": 231,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 468,
+      "files": 702,
+      "discovered": 1,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c372f3e4d5a6b7c8d29"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788832500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788832759651"
+        }
+      },
+      "duration_ms": 259651,
+      "total": 949,
+      "synced": 946,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 949,
+      "discovered": 0,
+      "removed": 2,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c432f3e4d5a6b7c8d41"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788832500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788832854679"
+        }
+      },
+      "duration_ms": 354679,
+      "total": 421,
+      "synced": 418,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 842,
+      "files": 1263,
+      "discovered": 0,
+      "removed": 2,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c4f2f3e4d5a6b7c8d53"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788832500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788832549707"
+        }
+      },
+      "duration_ms": 49707,
+      "total": 793,
+      "synced": 790,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 793,
+      "discovered": 4,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c5b2f3e4d5a6b7c8d65"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788832500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788832644735"
+        }
+      },
+      "duration_ms": 144735,
+      "total": 265,
+      "synced": 262,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 530,
+      "files": 795,
+      "discovered": 2,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c382f3e4d5a6b7c8d30"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788825300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788825567570"
+        }
+      },
+      "duration_ms": 267570,
+      "total": 80,
+      "synced": 77,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 80,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c442f3e4d5a6b7c8d42"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788825300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788825662598"
+        }
+      },
+      "duration_ms": 362598,
+      "total": 452,
+      "synced": 449,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 904,
+      "files": 1356,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c502f3e4d5a6b7c8d54"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788825300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788825357626"
+        }
+      },
+      "duration_ms": 57626,
+      "total": 824,
+      "synced": 821,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 824,
+      "discovered": 5,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c5c2f3e4d5a6b7c8d66"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788825300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788825452654"
+        }
+      },
+      "duration_ms": 152654,
+      "total": 296,
+      "synced": 293,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 592,
+      "files": 888,
+      "discovered": 3,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c392f3e4d5a6b7c8d31"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788818100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788818375489"
+        }
+      },
+      "duration_ms": 275489,
+      "total": 111,
+      "synced": 106,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 2,
+      "requeued": 2,
+      "versions": 0,
+      "files": 111,
+      "discovered": 0,
+      "removed": 1,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c452f3e4d5a6b7c8d43"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788818100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788818470517"
+        }
+      },
+      "duration_ms": 370517,
+      "total": 483,
+      "synced": 480,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 966,
+      "files": 1449,
+      "discovered": 0,
+      "removed": 1,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c512f3e4d5a6b7c8d55"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788818100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788818165545"
+        }
+      },
+      "duration_ms": 65545,
+      "total": 855,
+      "synced": 852,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 855,
+      "discovered": 6,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c5d2f3e4d5a6b7c8d67"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788818100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788818260573"
+        }
+      },
+      "duration_ms": 160573,
+      "total": 327,
+      "synced": 321,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 3,
+      "requeued": 3,
+      "versions": 654,
+      "files": 981,
+      "discovered": 4,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c3a2f3e4d5a6b7c8d32"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788810900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788811183408"
+        }
+      },
+      "duration_ms": 283408,
+      "total": 142,
+      "synced": 139,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 142,
+      "discovered": 0,
+      "removed": 2,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c462f3e4d5a6b7c8d44"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788810900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788811278436"
+        }
+      },
+      "duration_ms": 378436,
+      "total": 514,
+      "synced": 511,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1028,
+      "files": 1542,
+      "discovered": 0,
+      "removed": 2,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c522f3e4d5a6b7c8d56"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788810900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788810973464"
+        }
+      },
+      "duration_ms": 73464,
+      "total": 886,
+      "synced": 883,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 886,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c5e2f3e4d5a6b7c8d68"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788810900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788811068492"
+        }
+      },
+      "duration_ms": 168492,
+      "total": 358,
+      "synced": 355,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 716,
+      "files": 1074,
+      "discovered": 5,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c3b2f3e4d5a6b7c8d33"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "error",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788803700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788803991327"
+        }
+      },
+      "duration_ms": 291327,
+      "total": 173,
+      "synced": 0,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 173,
+      "discovered": 0,
+      "removed": 0,
+      "error": "upstream returned 503 Service Unavailable after 3 retries",
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c472f3e4d5a6b7c8d45"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788803700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788804086355"
+        }
+      },
+      "duration_ms": 386355,
+      "total": 545,
+      "synced": 542,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1090,
+      "files": 1635,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c532f3e4d5a6b7c8d57"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788803700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788803781383"
+        }
+      },
+      "duration_ms": 81383,
+      "total": 917,
+      "synced": 914,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 917,
+      "discovered": 1,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c5f2f3e4d5a6b7c8d69"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788803700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788803876411"
+        }
+      },
+      "duration_ms": 176411,
+      "total": 389,
+      "synced": 386,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 778,
+      "files": 1167,
+      "discovered": 6,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c3c2f3e4d5a6b7c8d34"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788796500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788796799246"
+        }
+      },
+      "duration_ms": 299246,
+      "total": 204,
+      "synced": 201,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 204,
+      "discovered": 0,
+      "removed": 1,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c482f3e4d5a6b7c8d46"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "error",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788796500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788796894274"
+        }
+      },
+      "duration_ms": 394274,
+      "total": 576,
+      "synced": 0,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1152,
+      "files": 1728,
+      "discovered": 0,
+      "removed": 1,
+      "error": "upstream returned 503 Service Unavailable after 3 retries",
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c542f3e4d5a6b7c8d58"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788796500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788796589302"
+        }
+      },
+      "duration_ms": 89302,
+      "total": 948,
+      "synced": 941,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 4,
+      "requeued": 4,
+      "versions": 0,
+      "files": 948,
+      "discovered": 2,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c602f3e4d5a6b7c8d70"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788796500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788796684330"
+        }
+      },
+      "duration_ms": 184330,
+      "total": 420,
+      "synced": 417,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 840,
+      "files": 1260,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c3d2f3e4d5a6b7c8d35"
+      },
+      "task": "curseforge-refresh",
+      "provider": "curseforge",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788789300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788789607165"
+        }
+      },
+      "duration_ms": 307165,
+      "total": 235,
+      "synced": 232,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 235,
+      "discovered": 0,
+      "removed": 2,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c492f3e4d5a6b7c8d47"
+      },
+      "task": "modrinth-refresh",
+      "provider": "modrinth",
+      "operation": "refresh",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788789300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788789702193"
+        }
+      },
+      "duration_ms": 402193,
+      "total": 607,
+      "synced": 604,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1214,
+      "files": 1821,
+      "discovered": 0,
+      "removed": 2,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c552f3e4d5a6b7c8d59"
+      },
+      "task": "curseforge-search",
+      "provider": "curseforge",
+      "operation": "search",
+      "status": "error",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788789300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788789397221"
+        }
+      },
+      "duration_ms": 97221,
+      "total": 79,
+      "synced": 0,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 79,
+      "discovered": 3,
+      "removed": 0,
+      "error": "upstream returned 503 Service Unavailable after 3 retries",
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c612f3e4d5a6b7c8d71"
+      },
+      "task": "modrinth-search",
+      "provider": "modrinth",
+      "operation": "search",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788789300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788789492249"
+        }
+      },
+      "duration_ms": 192249,
+      "total": 451,
+      "synced": 448,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 902,
+      "files": 1353,
+      "discovered": 1,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c632f3e4d5a6b7c8d73"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788782100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788782308087"
+        }
+      },
+      "duration_ms": 208087,
+      "total": 513,
+      "synced": 510,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 513,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c6f2f3e4d5a6b7c8d85"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788782100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788782403115"
+        }
+      },
+      "duration_ms": 303115,
+      "total": 885,
+      "synced": 881,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 1,
+      "requeued": 1,
+      "versions": 1770,
+      "files": 2655,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c7b2f3e4d5a6b7c8d97"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788782100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788782498143"
+        }
+      },
+      "duration_ms": 398143,
+      "total": 357,
+      "synced": 354,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 714,
+      "files": 1071,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c642f3e4d5a6b7c8d74"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788695700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788695916006"
+        }
+      },
+      "duration_ms": 216006,
+      "total": 544,
+      "synced": 541,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 544,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c702f3e4d5a6b7c8d86"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788695700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788696011034"
+        }
+      },
+      "duration_ms": 311034,
+      "total": 916,
+      "synced": 913,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1832,
+      "files": 2748,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c7c2f3e4d5a6b7c8d98"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "error",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788695700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788696106062"
+        }
+      },
+      "duration_ms": 406062,
+      "total": 388,
+      "synced": 0,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 776,
+      "files": 1164,
+      "discovered": 0,
+      "removed": 0,
+      "error": "upstream returned 503 Service Unavailable after 3 retries",
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c652f3e4d5a6b7c8d75"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788609300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788609523925"
+        }
+      },
+      "duration_ms": 223925,
+      "total": 575,
+      "synced": 572,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 575,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c712f3e4d5a6b7c8d87"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788609300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788609618953"
+        }
+      },
+      "duration_ms": 318953,
+      "total": 947,
+      "synced": 944,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1894,
+      "files": 2841,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c7d2f3e4d5a6b7c8d99"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788609300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788609713981"
+        }
+      },
+      "duration_ms": 413981,
+      "total": 419,
+      "synced": 416,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 838,
+      "files": 1257,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c662f3e4d5a6b7c8d76"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788522900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788523131844"
+        }
+      },
+      "duration_ms": 231844,
+      "total": 606,
+      "synced": 601,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 2,
+      "requeued": 2,
+      "versions": 0,
+      "files": 606,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c722f3e4d5a6b7c8d88"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788522900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788523226872"
+        }
+      },
+      "duration_ms": 326872,
+      "total": 78,
+      "synced": 75,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 156,
+      "files": 234,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c7e2f3e4d5a6b7c8d00"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788522900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788523321900"
+        }
+      },
+      "duration_ms": 421900,
+      "total": 450,
+      "synced": 447,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 900,
+      "files": 1350,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c672f3e4d5a6b7c8d77"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788436500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788436739763"
+        }
+      },
+      "duration_ms": 239763,
+      "total": 637,
+      "synced": 634,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 637,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c732f3e4d5a6b7c8d89"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788436500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788436834791"
+        }
+      },
+      "duration_ms": 334791,
+      "total": 109,
+      "synced": 106,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 218,
+      "files": 327,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c7f2f3e4d5a6b7c8d01"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788436500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788436929819"
+        }
+      },
+      "duration_ms": 429819,
+      "total": 481,
+      "synced": 478,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 962,
+      "files": 1443,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c682f3e4d5a6b7c8d78"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788350100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788350347682"
+        }
+      },
+      "duration_ms": 247682,
+      "total": 668,
+      "synced": 665,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 668,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c742f3e4d5a6b7c8d90"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788350100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788350442710"
+        }
+      },
+      "duration_ms": 342710,
+      "total": 140,
+      "synced": 137,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 280,
+      "files": 420,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c802f3e4d5a6b7c8d02"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788350100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788350137738"
+        }
+      },
+      "duration_ms": 37738,
+      "total": 512,
+      "synced": 509,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1024,
+      "files": 1536,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c692f3e4d5a6b7c8d79"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788263700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788263955601"
+        }
+      },
+      "duration_ms": 255601,
+      "total": 699,
+      "synced": 696,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 699,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c752f3e4d5a6b7c8d91"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788263700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788264050629"
+        }
+      },
+      "duration_ms": 350629,
+      "total": 171,
+      "synced": 168,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 342,
+      "files": 513,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c812f3e4d5a6b7c8d03"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788263700000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788263745657"
+        }
+      },
+      "duration_ms": 45657,
+      "total": 543,
+      "synced": 536,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 4,
+      "requeued": 4,
+      "versions": 1086,
+      "files": 1629,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c6a2f3e4d5a6b7c8d80"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788177300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788177563520"
+        }
+      },
+      "duration_ms": 263520,
+      "total": 730,
+      "synced": 727,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 730,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c762f3e4d5a6b7c8d92"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788177300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788177658548"
+        }
+      },
+      "duration_ms": 358548,
+      "total": 202,
+      "synced": 199,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 404,
+      "files": 606,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c822f3e4d5a6b7c8d04"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788177300000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788177353576"
+        }
+      },
+      "duration_ms": 53576,
+      "total": 574,
+      "synced": 571,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1148,
+      "files": 1722,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c6b2f3e4d5a6b7c8d81"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788090900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788091171439"
+        }
+      },
+      "duration_ms": 271439,
+      "total": 761,
+      "synced": 758,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 761,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c772f3e4d5a6b7c8d93"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788090900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788091266467"
+        }
+      },
+      "duration_ms": 366467,
+      "total": 233,
+      "synced": 230,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 466,
+      "files": 699,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c832f3e4d5a6b7c8d05"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788090900000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788090961495"
+        }
+      },
+      "duration_ms": 61495,
+      "total": 605,
+      "synced": 602,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1210,
+      "files": 1815,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c6c2f3e4d5a6b7c8d82"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788004500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788004779358"
+        }
+      },
+      "duration_ms": 279358,
+      "total": 792,
+      "synced": 789,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 792,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c782f3e4d5a6b7c8d94"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "partial_failure",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788004500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788004874386"
+        }
+      },
+      "duration_ms": 374386,
+      "total": 264,
+      "synced": 256,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 5,
+      "requeued": 5,
+      "versions": 528,
+      "files": 792,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c842f3e4d5a6b7c8d06"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1788004500000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1788004569414"
+        }
+      },
+      "duration_ms": 69414,
+      "total": 636,
+      "synced": 633,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1272,
+      "files": 1908,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c6d2f3e4d5a6b7c8d83"
+      },
+      "task": "curseforge-categories",
+      "provider": "curseforge",
+      "operation": "categories",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1787918100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1787918387277"
+        }
+      },
+      "duration_ms": 287277,
+      "total": 823,
+      "synced": 820,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 0,
+      "files": 823,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c792f3e4d5a6b7c8d95"
+      },
+      "task": "modrinth-tags",
+      "provider": "modrinth",
+      "operation": "tags",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1787918100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1787918482305"
+        }
+      },
+      "duration_ms": 382305,
+      "total": 295,
+      "synced": 292,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 590,
+      "files": 885,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    },
+    {
+      "_id": {
+        "$oid": "68be0c852f3e4d5a6b7c8d07"
+      },
+      "task": "modrinth-refresh-full",
+      "provider": "modrinth",
+      "operation": "refresh-full",
+      "status": "success",
+      "started_at": {
+        "$date": {
+          "$numberLong": "1787918100000"
+        }
+      },
+      "finished_at": {
+        "$date": {
+          "$numberLong": "1787918177333"
+        }
+      },
+      "duration_ms": 77333,
+      "total": 667,
+      "synced": 664,
+      "not_found": 2,
+      "skipped": 1,
+      "failed": 0,
+      "requeued": 0,
+      "versions": 1334,
+      "files": 2001,
+      "discovered": 0,
+      "removed": 0,
+      "error": null,
+      "version": "0.3.0"
+    }
+  ],
+  "count": 108
+}

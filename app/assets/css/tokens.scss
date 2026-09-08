@@ -1,0 +1,65 @@
+:root {
+  --brand-purple: #ab96d9;
+  --brand-pink: #fbbad2;
+  --gradient-brand: linear-gradient(90deg, #ab96d9, #fbbad2);
+
+  --bg: rgb(var(--mdui-color-surface));
+  --bg-subtle: rgb(var(--mdui-color-surface-container));
+  --bg-hover: rgb(var(--mdui-color-surface-container-high));
+  --bg-raised: rgb(var(--mdui-color-surface-container-highest));
+  --border: rgb(var(--mdui-color-outline-variant));
+  --border-strong: rgb(var(--mdui-color-outline));
+
+  --text: rgb(var(--mdui-color-on-surface));
+  --text-muted: rgb(var(--mdui-color-on-surface-variant));
+  --text-faint: rgb(var(--mdui-color-outline));
+
+  --accent: rgb(var(--mdui-color-primary));
+  --accent-strong: rgb(var(--mdui-color-on-primary-container));
+  --accent-active: rgb(var(--mdui-color-on-secondary-container));
+  --accent-tint: rgb(var(--mdui-color-secondary-container));
+  --accent-tint-strong: rgb(var(--mdui-color-primary-container));
+  --link: rgb(var(--mdui-color-primary));
+
+  --highlight: rgb(var(--mdui-color-tertiary));
+  --highlight-tint: rgb(var(--mdui-color-tertiary-container));
+  --on-highlight-tint: rgb(var(--mdui-color-on-tertiary-container));
+  --danger: rgb(var(--mdui-color-error));
+  --danger-tint: rgb(var(--mdui-color-error-container));
+  --on-danger-tint: rgb(var(--mdui-color-on-error-container));
+
+  --st-success: #1f8a4c;
+  --st-running: #2f7fd6;
+  --st-partial: #b7770f;
+  --st-failed: #d0463b;
+  --st-pending: #1d8a95;
+  --st-unknown: #77748a;
+
+  --radius: var(--mdui-shape-corner-medium);
+  --radius-sm: var(--mdui-shape-corner-small);
+  --radius-lg: var(--mdui-shape-corner-large);
+  --sidebar: 100px;
+  --content-max: 860px;
+
+  --font-sans: -apple-system, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+@mixin dark-status {
+  --st-success: #5fd08a;
+  --st-running: #7fb4ff;
+  --st-partial: #e8b54a;
+  --st-failed: #ff8a80;
+  --st-pending: #5ad2dc;
+  --st-unknown: #a29db0;
+}
+
+.mdui-theme-dark {
+  @include dark-status;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mdui-theme-auto {
+    @include dark-status;
+  }
+}

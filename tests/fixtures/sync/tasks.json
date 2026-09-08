@@ -1,0 +1,13 @@
+{
+  "data": [
+    { "task": "curseforge-queue", "next_run_at": "2026-09-08T12:20:00Z" },
+    { "task": "modrinth-queue", "next_run_at": "2026-09-08T12:10:00Z" },
+    { "task": "curseforge-refresh", "next_run_at": "2026-09-08T14:00:00Z" },
+    { "task": "modrinth-refresh", "next_run_at": "2026-09-08T14:00:00Z" },
+    { "task": "curseforge-search", "next_run_at": "2026-09-08T14:00:00Z" },
+    { "task": "modrinth-search", "next_run_at": "2026-09-08T12:30:00Z" },
+    { "task": "curseforge-categories", "next_run_at": "2026-09-09T00:00:00Z" },
+    { "task": "modrinth-tags", "next_run_at": "2026-09-09T00:00:00Z" },
+    { "task": "modrinth-refresh-full", "next_run_at": "2026-09-09T04:00:00Z" }
+  ]
+}
