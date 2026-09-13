@@ -16,12 +16,19 @@ export default defineCachedEventHandler(async (event): Promise<TasksResponse> =>
   const latest: Record<string, TaskRun | null> = {}
   const success: Record<string, TaskRun | null> = {}
   await Promise.all(scheduled.data.map(async ({ task }) => {
-    const [l, s] = await Promise.all([
-      fetchUpstream<{ data: unknown[] }>(event, base, '/api/task-runs', { task, limit: 1 }),
-      fetchUpstream<{ data: unknown[] }>(event, base, '/api/task-runs', { task, status: 'success', limit: 1 }),
-    ])
-    latest[task] = l.data[0] ? normalizeTaskRun(l.data[0]) : null
-    success[task] = s.data[0] ? normalizeTaskRun(s.data[0]) : null
+    // 单个任务的历史查不到只让它显示未知，不拖垮整页
+    try {
+      const [l, s] = await Promise.all([
+        fetchUpstream<{ data: unknown[] }>(event, base, '/api/task-runs', { task, limit: 1 }),
+        fetchUpstream<{ data: unknown[] }>(event, base, '/api/task-runs', { task, status: 'success', limit: 1 }),
+      ])
+      latest[task] = l.data[0] ? normalizeTaskRun(l.data[0]) : null
+      success[task] = s.data[0] ? normalizeTaskRun(s.data[0]) : null
+    }
+    catch {
+      latest[task] = null
+      success[task] = null
+    }
   }))
   return { data: mergeTaskOverview(scheduled.data, latest, success) }
 }, { maxAge: 30, swr: true, name: 'tasks' })
