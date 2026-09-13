@@ -8,12 +8,14 @@ const tasks = JSON.parse(readFileSync(new URL('tasks.json', dir), 'utf8'))
 const runs = JSON.parse(readFileSync(new URL('task-runs.json', dir), 'utf8'))
 
 // 把录制时间整体平移到现在，最新一条落在 5 分钟前
-const newest = Math.max(...runs.data.map(r => Number(r.started_at.$date.$numberLong)))
+const ms = value => Date.parse(value)
+const iso = value => new Date(value).toISOString()
+const newest = Math.max(...runs.data.map(r => ms(r.started_at)))
 const shift = Date.now() - 5 * 60000 - newest
 const shifted = runs.data.map(r => ({
   ...r,
-  started_at: { $date: { $numberLong: String(Number(r.started_at.$date.$numberLong) + shift) } },
-  finished_at: r.finished_at ? { $date: { $numberLong: String(Number(r.finished_at.$date.$numberLong) + shift) } } : null,
+  started_at: iso(ms(r.started_at) + shift),
+  finished_at: r.finished_at ? iso(ms(r.finished_at) + shift) : null,
   ...(scenario === 'failures' && r.task === 'curseforge-refresh' ? { status: 'error', error: 'connect ETIMEDOUT api.curseforge.com:443', failed: r.total } : {}),
 }))
 

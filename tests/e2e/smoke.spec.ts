@@ -1,4 +1,7 @@
+import { readFileSync } from 'node:fs'
 import { expect, test } from '@playwright/test'
+
+const scheduled = JSON.parse(readFileSync(new URL('../fixtures/sync/tasks.json', import.meta.url), 'utf8')) as { data: { task: string }[] }
 
 test('home renders stats without js', async ({ browser }) => {
   const ctx = await browser.newContext({ javaScriptEnabled: false })
@@ -8,10 +11,10 @@ test('home renders stats without js', async ({ browser }) => {
   await expect(page.locator('.stats')).toContainText(/\d{1,3}(,\d{3})+/)
 })
 
-test('status lists nine tasks', async ({ page }) => {
+test('status lists every scheduled task', async ({ page }) => {
   await page.goto('/status')
-  await expect(page.locator('a.task-row')).toHaveCount(9)
-  await expect(page.locator('a.task-row', { hasText: 'curseforge-search' })).toContainText(/同步中|Running/)
+  await expect(page.locator('a.task-row')).toHaveCount(scheduled.data.length)
+  await expect(page.locator('a.task-row', { hasText: 'modrinth-queue' })).toContainText(/成功|Success/)
 })
 
 test('theme persists across reload', async ({ page }) => {
