@@ -24,6 +24,11 @@ mdui-navigation-rail {
   background-color: var(--bg-subtle);
 }
 
+// mdui 把悬停层钉在项的左边缘，宽度固定 3.5rem；栏轨加宽后项也跟着变宽，悬停层就偏左，所以把项宽收回去
+mdui-navigation-rail-item {
+  width: 3.5rem;
+}
+
 .rail-brand {
   display: block;
   width: 76px;
