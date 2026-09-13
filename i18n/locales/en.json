@@ -87,7 +87,8 @@
     "history_count": "last {n}",
     "streak": "{n} consecutive failures",
     "back": "Back to overview",
-    "no_runs": "No runs recorded yet."
+    "no_runs": "No runs recorded yet.",
+    "loading": "Loading sync status…"
   },
   "state": {
     "running": "Running",

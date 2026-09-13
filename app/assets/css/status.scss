@@ -44,6 +44,17 @@
   }
 }
 
+.status-loading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 20px;
+
+  mdui-linear-progress {
+    width: 100%;
+  }
+}
+
 .summary-bar {
   display: flex;
   flex-wrap: wrap;

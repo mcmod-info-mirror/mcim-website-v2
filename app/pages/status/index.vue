@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { tasks, unavailable } = useTaskStatus()
+const { tasks, unavailable, pending } = useTaskStatus()
 
 useSeoMeta({ title: t('status.title'), description: t('status.intro') })
 
@@ -25,6 +25,15 @@ const groups = computed(() => {
       role="status"
     >
       {{ t('status.unavailable') }}
+    </div>
+    <div
+      v-else-if="pending && !tasks.length"
+      class="status-loading"
+      role="status"
+      aria-live="polite"
+    >
+      <mdui-linear-progress />
+      <span class="muted">{{ t('status.loading') }}</span>
     </div>
 
     <StatusTaskSummaryBar
