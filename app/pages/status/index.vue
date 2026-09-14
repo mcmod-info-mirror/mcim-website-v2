@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { tasks, unavailable, pending } = useTaskStatus()
+const { tasks, generatedAt, unavailable, pending } = useTaskStatus()
 
 useSeoMeta({ title: t('status.title'), description: t('status.intro') })
 
@@ -39,6 +39,7 @@ const groups = computed(() => {
     <StatusTaskSummaryBar
       v-if="tasks.length"
       :tasks="tasks"
+      :generated-at="generatedAt"
     />
 
     <section

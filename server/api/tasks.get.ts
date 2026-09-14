@@ -1,8 +1,12 @@
-import type { TaskRun, TasksResponse } from '~~/shared/types/sync'
+import type { TasksResponse } from '~~/shared/types/sync'
+
+/// 一次取回最近的运行历史再按任务归类，比逐任务查两次少十几个上游请求。
+/// 250 条约覆盖 30 小时，够每天只跑一次的任务落进窗口；再多就会逼近上游超时。
+const RUNS_LIMIT = 250
 
 let warned = false
 
-export default defineCachedEventHandler(async (event): Promise<TasksResponse> => {
+const loadTasks = cachedUpstream({ name: 'tasks', maxAge: 30, staleFor: 300 }, async (event): Promise<TasksResponse> => {
   const config = useRuntimeConfig(event)
   const base = config.syncApiBase
   if (!base) {
@@ -12,23 +16,15 @@ export default defineCachedEventHandler(async (event): Promise<TasksResponse> =>
     }
     throw createError({ statusCode: 503, statusMessage: 'sync api not configured', data: { error: 'sync api not configured' } })
   }
-  const scheduled = await fetchUpstream<{ data: { task: string, next_run_at: string }[] }>(event, base, '/api/tasks')
-  const latest: Record<string, TaskRun | null> = {}
-  const success: Record<string, TaskRun | null> = {}
-  await Promise.all(scheduled.data.map(async ({ task }) => {
-    // 单个任务的历史查不到只让它显示未知，不拖垮整页
-    try {
-      const [l, s] = await Promise.all([
-        fetchUpstream<{ data: unknown[] }>(event, base, '/api/task-runs', { task, limit: 1 }),
-        fetchUpstream<{ data: unknown[] }>(event, base, '/api/task-runs', { task, status: 'success', limit: 1 }),
-      ])
-      latest[task] = l.data[0] ? normalizeTaskRun(l.data[0]) : null
-      success[task] = s.data[0] ? normalizeTaskRun(s.data[0]) : null
-    }
-    catch {
-      latest[task] = null
-      success[task] = null
-    }
-  }))
-  return { data: mergeTaskOverview(scheduled.data, latest, success) }
-}, { maxAge: 30, swr: true, name: 'tasks' })
+  const [scheduled, history] = await Promise.all([
+    fetchUpstream<{ data: { task: string, next_run_at: string }[] }>(event, base, '/api/tasks'),
+    fetchUpstream<{ data: unknown[] }>(event, base, '/api/task-runs', { limit: RUNS_LIMIT }),
+  ])
+  const { latest, success } = indexLatestRuns(history.data)
+  return {
+    generated_at: new Date().toISOString(),
+    data: mergeTaskOverview(scheduled.data, latest, success),
+  }
+})
+
+export default defineEventHandler(loadTasks)

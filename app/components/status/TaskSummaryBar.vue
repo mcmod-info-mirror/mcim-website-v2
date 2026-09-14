@@ -2,7 +2,7 @@
 import type { TaskOverview } from '~~/shared/types/sync'
 import type { BuildInfo } from '~~/shared/types/api'
 
-const props = defineProps<{ tasks: TaskOverview[] }>()
+const props = defineProps<{ tasks: TaskOverview[], generatedAt: string | null }>()
 const { t } = useI18n()
 const { data: build } = useFetch<BuildInfo>('/api/build', { lazy: true, server: false })
 
@@ -43,7 +43,7 @@ const syncVersion = computed(() => props.tasks.find(x => x.latest?.version)?.lat
     <div class="summary-bar__meta faint">
       <span v-if="build">{{ t('status.versions_api') }} {{ build.version }} {{ build.commit }}</span>
       <span v-if="syncVersion">{{ t('status.versions_sync') }} {{ syncVersion }}</span>
-      <span>{{ t('status.refresh_hint') }}</span>
+      <span v-if="generatedAt">{{ t('status.generated') }} <UiRelativeTime :iso="generatedAt" /></span>
     </div>
   </div>
 </template>

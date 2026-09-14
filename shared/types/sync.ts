@@ -33,6 +33,7 @@ export interface TaskOverview {
 }
 
 export interface TasksResponse {
+  generated_at: string
   data: TaskOverview[]
 }
 

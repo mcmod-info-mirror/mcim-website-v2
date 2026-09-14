@@ -60,7 +60,6 @@
     "summary_partial": "部分失败",
     "summary_failed": "失败",
     "summary_running": "运行中",
-    "refresh_hint": "数据每 60 秒刷新",
     "versions_api": "API",
     "versions_sync": "sync",
     "unavailable": "同步状态暂时不可用：任务接口取不到数据。",
@@ -88,7 +87,8 @@
     "streak": "连续失败 {n} 次",
     "back": "返回状态总览",
     "no_runs": "还没有运行记录。",
-    "loading": "正在获取同步状态…"
+    "loading": "正在获取同步状态…",
+    "generated": "数据更新于"
   },
   "state": {
     "running": "同步中",

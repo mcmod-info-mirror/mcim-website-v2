@@ -60,7 +60,6 @@
     "summary_partial": "Partial",
     "summary_failed": "Failed",
     "summary_running": "Running",
-    "refresh_hint": "Refreshes every 60 seconds",
     "versions_api": "API",
     "versions_sync": "sync",
     "unavailable": "Sync status is temporarily unavailable: the task API returned no data.",
@@ -88,7 +87,8 @@
     "streak": "{n} consecutive failures",
     "back": "Back to overview",
     "no_runs": "No runs recorded yet.",
-    "loading": "Loading sync status…"
+    "loading": "Loading sync status…",
+    "generated": "Updated"
   },
   "state": {
     "running": "Running",

@@ -76,3 +76,20 @@ export function mergeTaskOverview(
     }
   })
 }
+
+/// 上游按 started_at 倒序返回，所以同一任务第一次出现的就是最近一轮。
+/// 一次取回最近若干条再按任务归类，省掉逐任务的两次查询。
+export function indexLatestRuns(raw: unknown[]): {
+  latest: Record<string, TaskRun>
+  success: Record<string, TaskRun>
+} {
+  const latest: Record<string, TaskRun> = {}
+  const success: Record<string, TaskRun> = {}
+  for (const item of raw) {
+    const run = normalizeTaskRun(item)
+    if (!run.task) continue
+    if (!latest[run.task]) latest[run.task] = run
+    if (run.status === 'success' && !success[run.task]) success[run.task] = run
+  }
+  return { latest, success }
+}

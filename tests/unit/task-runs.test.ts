@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { mergeTaskOverview, normalizeDate, normalizeTaskRun } from '../../server/utils/task-runs'
+import { indexLatestRuns, mergeTaskOverview, normalizeDate, normalizeTaskRun } from '../../server/utils/task-runs'
 
 const extended = {
   _id: { $oid: '68be0c1a2f3e4d5a6b7c8d9e' },
@@ -71,5 +71,44 @@ describe('mergeTaskOverview', () => {
     expect(merged[0]).toMatchObject({ provider: 'curseforge', operation: 'queue', latest: null, latest_success: null })
     expect(merged[1]?.latest?.status).toBe('success')
     expect(merged[1]?.latest_success).toBeNull()
+  })
+})
+
+describe('indexLatestRuns', () => {
+  const run = (task: string, status: string, started: string) => ({
+    task,
+    status,
+    started_at: started,
+    finished_at: started,
+  })
+
+  it('takes the first occurrence of each task as its latest run', () => {
+    const { latest } = indexLatestRuns([
+      run('modrinth-queue', 'error', '2026-09-13T03:00:00Z'),
+      run('curseforge-queue', 'success', '2026-09-13T02:40:00Z'),
+      run('modrinth-queue', 'success', '2026-09-13T02:30:00Z'),
+    ])
+    expect(latest['modrinth-queue']?.started_at).toBe('2026-09-13T03:00:00.000Z')
+    expect(latest['curseforge-queue']?.started_at).toBe('2026-09-13T02:40:00.000Z')
+  })
+
+  it('tracks the newest success apart from the newest run', () => {
+    const { latest, success } = indexLatestRuns([
+      run('modrinth-refresh', 'partial_failure', '2026-09-13T03:00:00Z'),
+      run('modrinth-refresh', 'success', '2026-09-13T01:00:00Z'),
+    ])
+    expect(latest['modrinth-refresh']?.status).toBe('partial_failure')
+    expect(success['modrinth-refresh']?.started_at).toBe('2026-09-13T01:00:00.000Z')
+  })
+
+  it('leaves a task out of the success index when the window has none', () => {
+    const { latest, success } = indexLatestRuns([run('modrinth-tags', 'error', '2026-09-13T03:00:00Z')])
+    expect(latest['modrinth-tags']).toBeDefined()
+    expect(success['modrinth-tags']).toBeUndefined()
+  })
+
+  it('skips records without a task name', () => {
+    const { latest } = indexLatestRuns([{ status: 'success', started_at: '2026-09-13T03:00:00Z' }])
+    expect(Object.keys(latest)).toEqual([])
   })
 })
