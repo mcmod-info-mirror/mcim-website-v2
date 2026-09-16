@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { expect, test } from '@playwright/test'
 
 const scheduled = JSON.parse(readFileSync(new URL('../fixtures/sync/tasks.json', import.meta.url), 'utf8')) as { data: { task: string }[] }
@@ -76,4 +76,21 @@ test('lookup rejects a mistyped id before calling upstream', async ({ page }) =>
   await page.goto('/lookup?platform=curseforge&id=jei')
   await expect(page.locator('.banner')).toContainText(/格式不对|looks wrong/)
   await expect(page.locator('.lookup-card')).toHaveCount(0)
+})
+
+const guides = readdirSync(new URL('../../content/guide/zh-CN', import.meta.url), { recursive: true })
+  .map(String)
+  .filter(entry => entry.endsWith('.md'))
+  .map(entry => `/guide/${entry.replace(/\.md$/, '')}`)
+
+test('every guide page has an english version', async ({ browser }) => {
+  const ctx = await browser.newContext({ javaScriptEnabled: false })
+  await ctx.addCookies([{ name: 'mcim_locale', value: 'en', url: 'http://localhost:3000' }])
+  const page = await ctx.newPage()
+  expect(guides.length).toBeGreaterThan(0)
+  for (const path of guides) {
+    await page.goto(path)
+    await expect(page.locator('h1'), path).not.toHaveText('')
+    await expect(page.locator('.banner'), path).toHaveCount(0)
+  }
 })
