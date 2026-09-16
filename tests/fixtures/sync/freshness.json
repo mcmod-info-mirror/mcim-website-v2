@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-09-16T06:30:43.958726750Z",
+  "collections": {
+    "curseforge_mods": {
+      "total": 350092,
+      "checked_within": {
+        "2h": 350092,
+        "24h": 350092,
+        "7d": 350092
+      },
+      "never_checked": 0,
+      "oldest_checked_at": "2026-09-16T04:30:47.305Z",
+      "newest_sync_at": "2026-09-16T06:20:31.603Z"
+    },
+    "modrinth_projects": {
+      "total": 159628,
+      "checked_within": {
+        "2h": 159628,
+        "24h": 159628,
+        "7d": 159628
+      },
+      "never_checked": 0,
+      "oldest_checked_at": "2026-09-16T04:38:16.943Z",
+      "newest_sync_at": "2026-09-16T06:30:15.007Z"
+    }
+  }
+}

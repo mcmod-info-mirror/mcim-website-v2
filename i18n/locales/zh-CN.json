@@ -88,6 +88,18 @@
     "back": "返回状态总览",
     "no_runs": "还没有运行记录。",
     "loading": "正在获取同步状态…",
+    "freshness_title": "数据新鲜度",
+    "freshness_intro": "两个缓存集合的核对进度。核对是指回源确认条目有没有变化，与是否重新拉取无关。",
+    "freshness_guide": "缓存日期的含义",
+    "freshness_oldest": "最旧核对",
+    "freshness_synced": "最新拉取",
+    "collection_curseforge_mods": "CurseForge Mod",
+    "collection_modrinth_projects": "Modrinth 项目",
+    "band_h2": "2 小时内",
+    "band_h24": "2 到 24 小时",
+    "band_d7": "1 到 7 天",
+    "band_older": "超过 7 天",
+    "band_never": "从未核对",
     "generated": "数据更新于"
   },
   "state": {

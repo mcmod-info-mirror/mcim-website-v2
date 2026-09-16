@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const { tasks, generatedAt, unavailable, pending } = useTaskStatus()
+const { collections } = useFreshness()
 
 useSeoMeta({ title: t('status.title'), description: t('status.intro') })
 
@@ -67,5 +68,7 @@ const groups = computed(() => {
         :item="item"
       />
     </section>
+
+    <StatusFreshnessPanel :collections="collections" />
   </div>
 </template>

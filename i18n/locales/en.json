@@ -88,6 +88,18 @@
     "back": "Back to overview",
     "no_runs": "No runs recorded yet.",
     "loading": "Loading sync status…",
+    "freshness_title": "Data freshness",
+    "freshness_intro": "How recently the two cached collections were checked against upstream. A check confirms whether an entry changed, whether or not it was re-fetched.",
+    "freshness_guide": "About cache dates",
+    "freshness_oldest": "Oldest check",
+    "freshness_synced": "Last fetch",
+    "collection_curseforge_mods": "CurseForge mods",
+    "collection_modrinth_projects": "Modrinth projects",
+    "band_h2": "Within 2h",
+    "band_h24": "2h to 24h",
+    "band_d7": "1 to 7 days",
+    "band_older": "Over 7 days",
+    "band_never": "Never checked",
     "generated": "Updated"
   },
   "state": {

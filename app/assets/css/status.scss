@@ -205,6 +205,74 @@
   font-size: 13px;
 }
 
+.freshness__intro {
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.freshness-row {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.freshness-row__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 16px;
+}
+
+.freshness-row__name {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+.freshness-row__meta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2px 14px;
+  font-size: 12px;
+}
+
+.freshness-bar {
+  display: flex;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--bg-raised);
+}
+
+.freshness-bar__band {
+  height: 100%;
+}
+
+.freshness-row__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.freshness-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.freshness--h2 { background: var(--st-success); }
+.freshness--h24 { background: var(--st-running); }
+.freshness--d7 { background: var(--st-partial); }
+.freshness--older { background: var(--st-failed); }
+.freshness--never { background: var(--st-unknown); }
+
 @media (max-width: 800px) {
   .task-row {
     grid-template-columns: 1fr 1fr;

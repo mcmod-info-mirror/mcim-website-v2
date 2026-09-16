@@ -44,3 +44,18 @@ test('api reference renders every group without js', async ({ browser }) => {
   await expect(operation.locator('.op__method')).toHaveText('GET')
   await expect(operation.locator('.curl pre')).toContainText('curl \'https://mod.mcimirror.top/modrinth/v2/search?query=sodium')
 })
+
+test('freshness panel renders full-width bars without js', async ({ browser }) => {
+  const ctx = await browser.newContext({ javaScriptEnabled: false })
+  const page = await ctx.newPage()
+  await page.goto('/status')
+  const rows = page.locator('.freshness-row')
+  await expect(rows).toHaveCount(2)
+  for (let i = 0; i < 2; i++) {
+    const widths = await rows.nth(i).locator('.freshness-bar__band').evaluateAll(
+      bands => bands.map(band => Number.parseFloat((band as HTMLElement).style.width)),
+    )
+    expect(widths.length).toBeGreaterThan(0)
+    expect(widths.reduce((sum, width) => sum + width, 0)).toBeCloseTo(100, 0)
+  }
+})
