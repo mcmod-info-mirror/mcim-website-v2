@@ -28,7 +28,19 @@ test('theme persists across reload', async ({ page }) => {
 
 test('mobile has no horizontal scroll', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 720 })
-  await page.goto('/status')
-  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)
-  expect(overflow).toBe(false)
+  for (const path of ['/status', '/docs']) {
+    await page.goto(path)
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)
+    expect(overflow, path).toBe(false)
+  }
+})
+
+test('api reference renders every group without js', async ({ browser }) => {
+  const ctx = await browser.newContext({ javaScriptEnabled: false })
+  const page = await ctx.newPage()
+  await page.goto('/docs')
+  await expect(page.locator('.ref-group')).toHaveCount(6)
+  const operation = page.locator('details.op', { hasText: '/modrinth/v2/search' })
+  await expect(operation.locator('.op__method')).toHaveText('GET')
+  await expect(operation.locator('.curl pre')).toContainText('curl \'https://mod.mcimirror.top/modrinth/v2/search?query=sodium')
 })
