@@ -113,8 +113,7 @@ useSeoMeta({ title: t('lookup.title'), description: t('lookup.intro') })
       class="banner"
       role="status"
     >
-      <strong>{{ t('lookup.miss_title') }}</strong>
-      {{ t('lookup.miss_body') }}
+      {{ t('lookup.miss_title') }}
       <NuxtLink to="/guide/semantics/freshness">
         {{ t('lookup.miss_guide') }}
       </NuxtLink>

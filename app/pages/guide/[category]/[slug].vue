@@ -37,7 +37,10 @@ useSeoMeta({
     >
       <template v-if="result">
         <h1>{{ result.page.title }}</h1>
-        <p class="lead">
+        <p
+          v-if="result.page.description"
+          class="lead"
+        >
           {{ result.page.description }}
         </p>
         <ContentRenderer

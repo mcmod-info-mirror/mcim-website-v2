@@ -1,6 +1,6 @@
 ---
 title: 快速开始
-description: MCIM 是什么，以及把请求切到镜像需要改什么。
+description: ''
 order: 1
 ---
 
@@ -24,5 +24,3 @@ MCIM 为中国大陆用户镜像 Modrinth 与 CurseForge 的 Mod 信息与文件
 1. 到 [启动器信息登记](https://github.com/mcmod-info-mirror/mcim-rust-api/issues/12) 留下启动器名与 User-Agent，见 [接入登记](/guide/rules/register)。
 2. 读一遍 [缓存日期](/guide/semantics/freshness)，决定怎样对待缓存响应。
 3. 全部接口见 [接口参考](/docs)。
-
-部分接口未实现；官方接口有更新而镜像未跟进时，请到 GitHub 反馈。

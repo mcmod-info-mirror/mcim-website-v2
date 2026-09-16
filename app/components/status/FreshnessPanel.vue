@@ -20,7 +20,6 @@ const rows = computed(() => props.collections.map(item => ({
       {{ t('status.freshness_title') }}
     </h2>
     <p class="freshness__intro muted">
-      {{ t('status.freshness_intro') }}
       <NuxtLink to="/guide/semantics/freshness">
         {{ t('status.freshness_guide') }}
       </NuxtLink>

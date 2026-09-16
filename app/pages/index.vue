@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const config = useRuntimeConfig()
 const router = useRouter()
 
 useSeoMeta({
@@ -38,6 +37,7 @@ const people = [
   { name: 'Pysio', href: 'https://github.com/pysio2007', desc: 'home.people_pysio' },
   { name: 'BangBang93', href: 'https://blog.bangbang93.com/', desc: 'home.people_bangbang93' },
   { name: 'SaltWood', href: 'https://github.com/SALTWOOD', desc: 'home.people_saltwood' },
+  { name: 'HaruHyacinth', href: 'https://github.com/HyacinthHaru', desc: 'home.people_haru' },
 ]
 </script>
 
@@ -177,19 +177,16 @@ const people = [
       icon="material-symbols:warning-outline-rounded"
       :title="t('home.notice_title')"
     >
-      <ol class="notices">
+      <ul class="notices">
         <li>{{ t('home.notice_1') }}</li>
         <li>{{ t('home.notice_2') }}</li>
         <li>{{ t('home.notice_3') }}</li>
-      </ol>
+      </ul>
       <p>
-        <NuxtLink to="/guide/rules/policy">
-          {{ t('home.notice_more') }}
-        </NuxtLink>
-        · <a
-          :href="config.public.apiUrl"
+        <a
+          href="https://www.mcimirror.top/"
           rel="noopener"
-        >{{ config.public.apiUrl }}</a>
+        >{{ t('home.notice_more') }}</a>
       </p>
     </HomeSection>
   </div>
