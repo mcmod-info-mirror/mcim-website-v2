@@ -8,6 +8,7 @@ const items = [
   { to: '/', icon: 'material-symbols:home-rounded', key: 'nav.home', exact: true },
   { to: '/status', icon: 'material-symbols:monitor-heart-outline-rounded', key: 'nav.status' },
   { to: '/docs', icon: 'material-symbols:api-rounded', key: 'nav.docs' },
+  { to: '/lookup', icon: 'material-symbols:search-rounded', key: 'nav.lookup' },
   { to: '/guide', icon: 'material-symbols:menu-book-outline-rounded', key: 'nav.guide' },
   { to: '/sponsor', icon: 'material-symbols:favorite-outline-rounded', key: 'nav.sponsor' },
 ]

@@ -28,7 +28,7 @@ test('theme persists across reload', async ({ page }) => {
 
 test('mobile has no horizontal scroll', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 720 })
-  for (const path of ['/status', '/docs']) {
+  for (const path of ['/status', '/docs', '/lookup?platform=modrinth&id=sodium']) {
     await page.goto(path)
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)
     expect(overflow, path).toBe(false)
@@ -58,4 +58,22 @@ test('freshness panel renders full-width bars without js', async ({ browser }) =
     expect(widths.length).toBeGreaterThan(0)
     expect(widths.reduce((sum, width) => sum + width, 0)).toBeCloseTo(100, 0)
   }
+})
+
+test('lookup answers a slug without js', async ({ browser }) => {
+  const ctx = await browser.newContext({ javaScriptEnabled: false })
+  const page = await ctx.newPage()
+  await page.goto('/lookup')
+  await page.locator('input[name="id"]').fill('sodium')
+  await page.locator('button[type="submit"]').click()
+  await expect(page).toHaveURL(/id=sodium/)
+  const card = page.locator('.lookup-card')
+  await expect(card.locator('h2')).toHaveText('Sodium')
+  await expect(card.locator('.lookup-facts dd time')).toHaveCount(3)
+})
+
+test('lookup rejects a mistyped id before calling upstream', async ({ page }) => {
+  await page.goto('/lookup?platform=curseforge&id=jei')
+  await expect(page.locator('.banner')).toContainText(/格式不对|looks wrong/)
+  await expect(page.locator('.lookup-card')).toHaveCount(0)
 })
