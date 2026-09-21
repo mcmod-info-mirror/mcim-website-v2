@@ -94,3 +94,30 @@ test('every guide page has an english version', async ({ browser }) => {
     await expect(page.locator('.banner'), path).toHaveCount(0)
   }
 })
+
+test('editing a parameter rewrites the curl command', async ({ page }) => {
+  await page.goto('/docs', { waitUntil: 'networkidle' })
+  const operation = page.locator('#get_mod')
+  await operation.evaluate(el => (el as HTMLDetailsElement).open = true)
+  const command = operation.locator('.curl pre')
+  await expect(command).toContainText('/curseforge/v1/mods/238222')
+
+  const value = operation.locator('.param-value').first()
+  await value.fill('999')
+  await expect(command).toContainText('/curseforge/v1/mods/999')
+
+  await value.fill('')
+  await expect(command).toContainText('/curseforge/v1/mods/{mod_id}')
+})
+
+test('clearing the request body drops the data flag', async ({ page }) => {
+  await page.goto('/docs', { waitUntil: 'networkidle' })
+  const operation = page.locator('#get_version_files')
+  await operation.evaluate(el => (el as HTMLDetailsElement).open = true)
+  const command = operation.locator('.curl pre')
+  await expect(command).toContainText('-d ')
+
+  await operation.locator('.op__body-input').fill('')
+  await expect(command).not.toContainText('-d ')
+  await expect(command).not.toContainText('Content-Type')
+})

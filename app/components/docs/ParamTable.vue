@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { ReferenceParam } from '~~/shared/types/reference'
 
-defineProps<{ params: ReferenceParam[] }>()
+defineProps<{ params: ReferenceParam[], values: string[] }>()
+const emit = defineEmits<{ update: [index: number, value: string] }>()
 const { t } = useI18n()
 </script>
 
@@ -15,12 +16,12 @@ const { t } = useI18n()
           <th>{{ t('docs.col_type') }}</th>
           <th>{{ t('docs.col_required') }}</th>
           <th>{{ t('docs.col_desc') }}</th>
-          <th>{{ t('docs.col_example') }}</th>
+          <th>{{ t('docs.col_value') }}</th>
         </tr>
       </thead>
       <tbody>
         <tr
-          v-for="param in params"
+          v-for="(param, index) in params"
           :key="`${param.in}-${param.name}`"
         >
           <td><code>{{ param.name }}</code></td>
@@ -31,8 +32,21 @@ const { t } = useI18n()
             {{ param.type }}
           </td>
           <td>{{ param.required ? t('docs.yes') : t('docs.no') }}</td>
-          <td>{{ param.description }}</td>
-          <td><code v-if="param.example">{{ param.example }}</code></td>
+          <td class="ref-table__desc">
+            {{ param.description }}
+          </td>
+          <td>
+            <input
+              class="param-value"
+              type="text"
+              autocomplete="off"
+              spellcheck="false"
+              :value="values[index] ?? ''"
+              :placeholder="param.example ?? param.name"
+              :aria-label="param.name"
+              @input="emit('update', index, ($event.target as HTMLInputElement).value)"
+            >
+          </td>
         </tr>
       </tbody>
     </table>

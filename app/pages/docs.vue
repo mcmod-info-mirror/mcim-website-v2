@@ -74,6 +74,7 @@ onMounted(() => {
             v-for="operation in group.operations"
             :key="operation.id"
             :operation="operation"
+            :base-url="data?.base_url ?? config.public.apiUrl"
             :swagger-url="swaggerUrl"
           />
         </section>

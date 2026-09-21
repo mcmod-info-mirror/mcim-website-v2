@@ -72,28 +72,6 @@ export function sampleBody(schema: Json, schemas: Json, depth = 0, seen: string[
   return 'string'
 }
 
-function quote(value: string): string {
-  return `'${value.replaceAll('\'', '\'\\\'\'')}'`
-}
-
-/// 没有示例值的参数保留 {name} 原样：花括号在 shell 里是字面量，也是 OpenAPI 自己的写法
-export function buildCurl(base: string, method: string, path: string, params: ReferenceParam[], body: unknown): string {
-  let target = path
-  for (const param of params.filter(p => p.in === 'path')) {
-    target = target.replace(`{${param.name}}`, param.example ?? `{${param.name}}`)
-  }
-  const query = params
-    .filter(p => p.in === 'query' && (p.required || p.example !== null))
-    .map(p => `${p.name}=${p.example === null ? `{${p.name}}` : encodeURIComponent(p.example)}`)
-  const url = `${base}${target}${query.length ? `?${query.join('&')}` : ''}`
-  const lines = [`curl${method === 'GET' ? '' : ` -X ${method}`} ${quote(url)}`]
-  if (body !== null) {
-    lines.push('-H \'Content-Type: application/json\'')
-    lines.push(`-d ${quote(JSON.stringify(body))}`)
-  }
-  return lines.join(' \\\n  ')
-}
-
 /// /healthz 的 tag 被 utoipa 写成了 crate::routes::common，取最后一段归位
 export function groupName(tag: string): string {
   const last = tag.split('::').pop() || tag
@@ -140,6 +118,7 @@ export function normalizeReference(raw: unknown, baseUrl: string): ReferenceDoc 
       const tag = String((op.tags as unknown[] | undefined)?.[0] ?? 'Common')
       const params = (Array.isArray(op.parameters) ? op.parameters : []).map(toParam)
       const bodySchema = jsonSchema(op.requestBody)
+      const bodyExample = bodySchema ? JSON.stringify(sampleBody(bodySchema, schemas)) : null
       const verb = method.toUpperCase()
       const name = groupName(tag)
       const list = grouped.get(name) ?? []
@@ -152,8 +131,8 @@ export function normalizeReference(raw: unknown, baseUrl: string): ReferenceDoc 
         tag,
         params,
         body: bodySchema && schemaType(bodySchema),
+        body_example: bodyExample,
         responses: toResponses(op.responses),
-        curl: buildCurl(baseUrl, verb, path, params, bodySchema ? sampleBody(bodySchema, schemas) : null),
       })
       grouped.set(name, list)
     }

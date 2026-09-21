@@ -21,7 +21,9 @@ const { t } = useI18n()
           :key="response.code"
         >
           <td><code :class="`code--${response.code.startsWith('2') ? 'ok' : 'bad'}`">{{ response.code }}</code></td>
-          <td>{{ response.description }}</td>
+          <td class="ref-table__desc">
+            {{ response.description }}
+          </td>
           <td><code v-if="response.schema">{{ response.schema }}</code></td>
         </tr>
       </tbody>

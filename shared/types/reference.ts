@@ -22,8 +22,8 @@ export interface ReferenceOperation {
   tag: string
   params: ReferenceParam[]
   body: string | null
+  body_example: string | null
   responses: ReferenceResponse[]
-  curl: string
 }
 
 export interface ReferenceGroup {

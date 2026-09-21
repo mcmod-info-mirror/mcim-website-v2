@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { buildCurl, groupName, normalizeReference, sampleBody, schemaType } from '../../server/utils/reference'
+import { groupName, normalizeReference, sampleBody, schemaType } from '../../server/utils/reference'
+import { buildCurl } from '../../shared/utils/curl'
 
 const raw = JSON.parse(readFileSync(new URL('../fixtures/api/openapi.json', import.meta.url), 'utf8'))
 const doc = normalizeReference(raw, 'https://mod.mcimirror.top')
@@ -73,9 +74,22 @@ describe('buildCurl', () => {
   })
 
   it('writes the verb, content type and body for a post', () => {
-    expect(buildCurl('https://a.test', 'POST', '/mods', [], { modIds: [1] })).toBe(
+    expect(buildCurl('https://a.test', 'POST', '/mods', [], '{"modIds":[1]}')).toBe(
       'curl -X POST \'https://a.test/mods\' \\\n  -H \'Content-Type: application/json\' \\\n  -d \'{"modIds":[1]}\'',
     )
+  })
+
+  it('drops the body entirely once it is cleared', () => {
+    expect(buildCurl('https://a.test', 'POST', '/mods', [], '')).toBe('curl -X POST \'https://a.test/mods\'')
+  })
+
+  it('follows the values it is given rather than the recorded examples', () => {
+    const params = [
+      { name: 'mod_id', in: 'path', required: true, type: 'integer', description: '', example: '999' },
+      { name: 'q', in: 'query', required: false, type: 'string', description: '', example: 'typed' },
+    ]
+    expect(buildCurl('https://a.test', 'GET', '/mods/{mod_id}', params, null))
+      .toBe('curl \'https://a.test/mods/999?q=typed\'')
   })
 })
 
@@ -111,10 +125,17 @@ describe('recorded openapi fixture', () => {
       .toEqual(['get_curseforge_translation_deprecated', 'get_modrinth_translation_deprecated'])
   })
 
-  it('builds a runnable command for a batch endpoint', () => {
-    expect(find('get_version_files').curl).toBe(
+  it('hands the page a request body example it can edit', () => {
+    const operation = find('get_version_files')
+    expect(operation.body).toBe('HashesQuery')
+    expect(operation.body_example).toBe('{"hashes":["d67e66ea4bb2409997b636dae4203d33764cdcc8"],"algorithm":"sha1"}')
+    expect(buildCurl(doc.base_url, operation.method, operation.path, operation.params, operation.body_example)).toBe(
       'curl -X POST \'https://mod.mcimirror.top/modrinth/v2/version_files\' \\\n  -H \'Content-Type: application/json\' \\\n  -d \'{"hashes":["d67e66ea4bb2409997b636dae4203d33764cdcc8"],"algorithm":"sha1"}\'',
     )
+  })
+
+  it('leaves body_example empty for an operation without a request body', () => {
+    expect(find('get_mod').body_example).toBeNull()
   })
 
   it('keeps the raw tag so the swagger deep link still resolves', () => {
