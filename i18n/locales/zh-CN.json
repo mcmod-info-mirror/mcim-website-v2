@@ -110,7 +110,7 @@
   },
   "docs": {
     "title": "接口参考",
-    "intro": "所有接口的基地址是",
+    "intro": "所有接口的 Base URL 是",
     "swagger_link": "Swagger 页面",
     "swagger_hint": "字段结构与在线试用请看上游的",
     "retry": "接口文档加载失败。",

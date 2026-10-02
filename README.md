@@ -16,7 +16,7 @@ npm run scheme   # 改了品牌色后重新生成 app/assets/css/scheme.scss
 | 变量 | 默认 | 说明 |
 | --- | --- | --- |
 | `NUXT_MCIM_API_BASE` | `https://mod.mcimirror.top` | rust-api 基地址 |
-| `NUXT_SYNC_API_BASE` | 无 | rust-sync 任务接口基地址，生产为 `https://mod.mcimirror.top`（`/api/*` 反代到 rust-sync），缺失时状态页显示未知 |
+| `NUXT_SYNC_API_BASE` | 无 | rust-sync 任务接口 Base URL，生产为 `https://mod.mcimirror.top`（`/api/*` 反代到 rust-sync），缺失时状态页显示未知 |
 | `NUXT_UPSTREAM_USER_AGENT` | `mcim-website/<version> (+仓库地址)` | 上游请求的 User-Agent |
 | `NUXT_UPSTREAM_TIMEOUT_MS` | `5000` | 单次上游请求超时 |
 | `NUXT_PUBLIC_SITE_URL` | `https://www.mcimirror.top` | canonical 与 OG |
