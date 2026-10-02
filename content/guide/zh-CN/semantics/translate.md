@@ -4,7 +4,7 @@ description: Modrinth 项目与 CurseForge Mod 简介的中文翻译接口。
 order: 2
 ---
 
-简介原文来自 Modrinth Project 的 `description` 与 CurseForge Mod 的 `summary`，翻译由 [translate-mod-summary](https://github.com/mcmod-info-mirror/translate-mod-summary) 生成。
+简介原文来自 Modrinth Project 的 `description` 与 CurseForge Mod 的 `summary`，翻译由 [mcim-translate](https://github.com/mcmod-info-mirror/mcim-translate) 生成。
 
 ## Modrinth
 

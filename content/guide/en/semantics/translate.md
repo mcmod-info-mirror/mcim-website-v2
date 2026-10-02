@@ -4,7 +4,7 @@ description: Chinese translations of Modrinth project and CurseForge mod summari
 order: 2
 ---
 
-The source text comes from the `description` field of a Modrinth project and the `summary` field of a CurseForge mod. The translations are produced by [translate-mod-summary](https://github.com/mcmod-info-mirror/translate-mod-summary).
+The source text comes from the `description` field of a Modrinth project and the `summary` field of a CurseForge mod. The translations are produced by [mcim-translate](https://github.com/mcmod-info-mirror/mcim-translate).
 
 ## Modrinth
 
