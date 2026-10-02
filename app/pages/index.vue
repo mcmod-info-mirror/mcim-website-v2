@@ -32,12 +32,12 @@ const entries = [
   { to: '/guide', icon: 'material-symbols:menu-book-outline-rounded', title: 'home.how_guide', desc: 'home.how_guide_desc' },
 ]
 
-const people = [
-  { name: 'z0z0r4', href: 'https://github.com/z0z0r4', desc: '' },
-  { name: 'Pysio', href: 'https://github.com/pysio2007', desc: 'home.people_pysio' },
-  { name: 'BangBang93', href: 'https://blog.bangbang93.com/', desc: 'home.people_bangbang93' },
-  { name: 'SaltWood', href: 'https://github.com/SALTWOOD', desc: 'home.people_saltwood' },
-  { name: 'HaruHyacinth', href: 'https://github.com/HyacinthHaru', desc: 'home.people_haru' },
+const credits = [
+  // { name: 'z0z0r4', href: 'https://github.com/z0z0r4', desc: '' },
+  { name: 'Pysio', href: 'https://github.com/pysio2007', desc: 'home.credits_pysio' },
+  { name: 'BangBang93', href: 'https://blog.bangbang93.com/', desc: 'home.credits_bangbang93' },
+  { name: 'SaltWood', href: 'https://github.com/SALTWOOD', desc: 'home.credits_saltwood' },
+  { name: 'HaruHyacinth', href: 'https://github.com/HyacinthHaru', desc: 'home.credits_haru' },
 ]
 </script>
 
@@ -125,11 +125,11 @@ const people = [
 
     <HomeSection
       icon="material-symbols:group-outline-rounded"
-      :title="t('home.people_title')"
+      :title="t('home.credits_title')"
     >
-      <ul class="people">
+      <ul class="credits">
         <li
-          v-for="person in people"
+          v-for="person in credits"
           :key="person.name"
         >
           <a
@@ -142,7 +142,7 @@ const people = [
           > · {{ t(person.desc) }}</span>
         </li>
         <li class="muted">
-          {{ t('home.people_nodes') }}
+          {{ t('home.credits_nodes') }}
         </li>
       </ul>
     </HomeSection>
@@ -253,14 +253,14 @@ const people = [
   color: var(--accent);
 }
 
-.people,
+.credits,
 .links,
 .notices {
   padding-left: 20px;
 }
 
 .links li,
-.people li {
+.credits li {
   margin: 0 0 4px;
 }
 
