@@ -177,7 +177,7 @@ const people = [
       </ul>
       <p>
         <a
-          href="https://www.mcimirror.top/"
+          href="https://www.mcimirror.top/guide/rules/policy"
           rel="noopener"
         >{{ t('home.notice_more') }}</a>
       </p>
