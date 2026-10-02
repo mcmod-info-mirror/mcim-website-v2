@@ -36,4 +36,4 @@ GET https://mod.mcimirror.top/translate/curseforge?modId=238222
 }
 ```
 
-Both endpoints also accept POST. The batch endpoints and their parameters are in the Translate group of the [API reference](/docs).
+The batch endpoints are in the Translate group of the [API reference](/docs).

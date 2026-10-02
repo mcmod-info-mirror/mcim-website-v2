@@ -36,4 +36,4 @@ GET https://mod.mcimirror.top/translate/curseforge?modId=238222
 }
 ```
 
-两个接口同时接受 POST。批量接口与参数见 [接口参考](/docs) 的 Translate 分组。
+批量接口见 [接口参考](/docs) 的 Translate 分组。
