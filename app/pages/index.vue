@@ -163,13 +163,6 @@ const people = [
           <span class="muted">{{ t('home.project_email') }}</span>
           <a href="mailto:z0z0r4@outlook.com">z0z0r4@outlook.com</a>
         </li>
-        <li>
-          <span class="muted">{{ t('home.project_status') }}</span>
-          <a
-            href="https://status.mcimirror.top"
-            rel="noopener"
-          >status.mcimirror.top</a>
-        </li>
       </ul>
     </HomeSection>
 
