@@ -11,6 +11,28 @@ test('home renders stats without js', async ({ browser }) => {
   await expect(page.locator('.stats')).toContainText(/\d{1,3}(,\d{3})+/)
 })
 
+for (const locale of ['zh-CN', 'en']) {
+  test(`home lists repositories and feedback without js in ${locale}`, async ({ browser }) => {
+    const ctx = await browser.newContext({ javaScriptEnabled: false })
+    await ctx.addCookies([{ name: 'mcim_locale', value: locale, url: 'http://localhost:3000' }])
+    const page = await ctx.newPage()
+    await page.goto('/')
+    const project = page.locator('#project')
+    await expect(project.locator('h2')).toHaveText(locale === 'en' ? 'Project and feedback' : '项目与反馈')
+    await expect(project.locator('.links a')).toHaveCount(3)
+    await expect(project.locator('.links a').nth(0)).toHaveAttribute('href', 'https://github.com/mcmod-info-mirror')
+    await expect(project.locator('.links a').nth(1)).toHaveAttribute('href', 'https://github.com/mcmod-info-mirror/mcim-rust-api/issues')
+    await expect(project.locator('.links a').nth(2)).toHaveAttribute('href', 'mailto:z0z0r4@outlook.com')
+    await expect(project.locator('.repository')).toHaveCount(5)
+    for (const name of ['mcim-rust-api', 'mcim-rust-sync', 'mcim-translate', 'mcim-website-v2', 'data']) {
+      const repository = project.locator('.repository', { has: page.getByRole('link', { name, exact: true }) })
+      await expect(repository.locator('a')).toHaveAttribute('href', `https://github.com/mcmod-info-mirror/${name}`)
+      await expect(repository.locator('.repository__description')).not.toHaveText('')
+    }
+    await ctx.close()
+  })
+}
+
 test('status lists every scheduled task', async ({ page }) => {
   await page.goto('/status')
   await expect(page.locator('a.task-row')).toHaveCount(scheduled.data.length)
@@ -28,7 +50,7 @@ test('theme persists across reload', async ({ page }) => {
 
 test('mobile has no horizontal scroll', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 720 })
-  for (const path of ['/status', '/docs', '/lookup?platform=modrinth&id=sodium']) {
+  for (const path of ['/', '/status', '/docs', '/lookup?platform=modrinth&id=sodium']) {
     await page.goto(path)
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)
     expect(overflow, path).toBe(false)

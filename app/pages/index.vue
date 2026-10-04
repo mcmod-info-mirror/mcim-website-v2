@@ -32,6 +32,14 @@ const entries = [
   { to: '/guide', icon: 'material-symbols:menu-book-outline-rounded', title: 'home.how_guide', desc: 'home.how_guide_desc' },
 ]
 
+const repositories = [
+  { name: 'mcim-rust-api', desc: 'home.project_api_desc' },
+  { name: 'mcim-rust-sync', desc: 'home.project_sync_desc' },
+  { name: 'mcim-translate', desc: 'home.project_translate_desc' },
+  { name: 'mcim-website-v2', desc: 'home.project_website_desc' },
+  { name: 'data', desc: 'home.project_data_desc' },
+]
+
 const credits = [
   // { name: 'z0z0r4', href: 'https://github.com/z0z0r4', desc: '' },
   { name: 'Pysio', href: 'https://github.com/pysio2007', desc: 'home.credits_pysio' },
@@ -148,6 +156,7 @@ const credits = [
     </HomeSection>
 
     <HomeSection
+      id="project"
       icon="material-symbols:forum-outline-rounded"
       :title="t('home.project_title')"
     >
@@ -160,8 +169,29 @@ const credits = [
           >github.com/mcmod-info-mirror</a>
         </li>
         <li>
+          <span class="muted">{{ t('home.project_feedback') }}</span>
+          <a
+            href="https://github.com/mcmod-info-mirror/mcim-rust-api/issues"
+            rel="noopener"
+          >mcim-rust-api/issues</a>
+        </li>
+        <li>
           <span class="muted">{{ t('home.project_email') }}</span>
           <a href="mailto:z0z0r4@outlook.com">z0z0r4@outlook.com</a>
+        </li>
+      </ul>
+      <h3>{{ t('home.project_repositories') }}</h3>
+      <ul class="repositories">
+        <li
+          v-for="repository in repositories"
+          :key="repository.name"
+          class="repository"
+        >
+          <a
+            :href="`https://github.com/mcmod-info-mirror/${repository.name}`"
+            rel="noopener"
+          >{{ repository.name }}</a>
+          <span class="repository__description muted"> · {{ t(repository.desc) }}</span>
         </li>
       </ul>
     </HomeSection>
@@ -255,11 +285,13 @@ const credits = [
 
 .credits,
 .links,
+.repositories,
 .notices {
   padding-left: 20px;
 }
 
 .links li,
+.repositories li,
 .credits li {
   margin: 0 0 4px;
 }
@@ -267,5 +299,9 @@ const credits = [
 .links .muted {
   display: inline-block;
   min-width: 96px;
+}
+
+.repositories {
+  overflow-wrap: anywhere;
 }
 </style>
